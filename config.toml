@@ -1,3 +1,4 @@
 languageCode = "en-us"
 title = "Lisik.IT"
 baseurl = "https://lisik.it/"
+DefaultContentLanguage = "en"
