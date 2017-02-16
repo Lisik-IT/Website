@@ -1,0 +1,10 @@
+<ul>
+  <% routes.forEach((route) => { %>
+  <li>
+    <a href="<%- route.url %>"><%- route.name %></a>
+    <% if ( route.children) { %>
+    <%- partial('menu', { routes: route.children }) %>
+    <% } %>
+  </li>
+  <% }) %>
+</ul>
