@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="<%- config.language %>">
+<head>
+	<title><%- page.title ? page.title + ' - ' : '' %>Lisik.IT</title>
+
+	<meta charset="utf-8">
+	<meta name="description" content="<%- config.description %>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+</head>
+<body class="stretched">
+	<div id="wrapper" class="clearfix">
+    <%- partial('partials/header') %>
+    <%- body %>
+    <%- partial('partials/footer') %>
+	</div>
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/plugins.js"></script>
+	<script type="text/javascript" src="/js/functions.js"></script>
+</body>
+</html>
