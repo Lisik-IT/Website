@@ -66,3 +66,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: canvas
+
+# Sass configuration
+node_sass:
+  outputStyle: compressed
