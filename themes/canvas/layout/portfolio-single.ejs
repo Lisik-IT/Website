@@ -1,0 +1,106 @@
+<% const project = site.data.projects.find(project => project.id === page.id) %>
+<% const projects = site.data.projects.filter(project => project.id !== page.id) %>
+
+<section id="page-title" class="page-title-center">
+  <div class="container clearfix">
+    <h1><%- project.name %></h1>
+  </div>
+</section>
+<section id="content">
+  <div class="content-wrap">
+    <div class="portfolio-single-image portfolio-single-image-full" style="background-image: url('<%- project.image %>');" data-stellar-background-ratio="0.5"></div>
+    <div class="container clearfix">
+      <div class="col_one_third nobottommargin">
+        <div class="panel panel-default events-meta">
+          <div class="panel-body">
+            <ul class="portfolio-meta nobottommargin">
+              <li>
+                <span>
+                  <i class="icon-user"></i>
+                  Created by:
+                </span>
+                <% project.authors.forEach((author, index, arr) => { %>
+                <a href="#"><%- author %></a><%- arr.length === index + 1 ? '' : ', ' %>
+                <% }) %>
+              </li>
+              <li>
+                <span>
+                  <i class="icon-calendar3"></i>
+                  Completed on:
+                </span>
+                <%- date(project.completed) %>
+              </li>
+              <li>
+                <span>
+                  <i class="icon-lightbulb"></i>
+                  Technology used:
+                </span>
+                <% project.technologies.forEach((technology, index) => { %>
+                <%- technology %><%- project.technologies.length === index + 1 ? '' : ', ' %>
+                <% }) %>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="si-share noborder clearfix">
+          <span>Share:</span>
+          <div>
+            <a href="#" class="social-icon si-borderless si-facebook">
+              <i class="icon-facebook"></i>
+              <i class="icon-facebook"></i>
+            </a>
+            <a href="#" class="social-icon si-borderless si-twitter">
+              <i class="icon-twitter"></i>
+              <i class="icon-twitter"></i>
+            </a>
+            <a href="#" class="social-icon si-borderless si-pinterest">
+              <i class="icon-pinterest"></i>
+              <i class="icon-pinterest"></i>
+            </a>
+            <a href="#" class="social-icon si-borderless si-gplus">
+              <i class="icon-gplus"></i>
+              <i class="icon-gplus"></i>
+            </a>
+            <a href="#" class="social-icon si-borderless si-rss">
+              <i class="icon-rss"></i>
+              <i class="icon-rss"></i>
+            </a>
+            <a href="#" class="social-icon si-borderless si-email3">
+              <i class="icon-email3"></i>
+              <i class="icon-email3"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col_two_third portfolio-single-content col_last nobottommargin">
+        <div class="fancy-title title-dotted-border">
+          <h2>Project Info:</h2>
+        </div>
+        <p class="nobottommargin"><%- project.description %></p>
+      </div>
+    </div>
+    <div class="section nobottommargin nobottompadding noborder">
+      <div class="container clearfix">
+        <h3 class="center bottommargin">Related Projects:</h3>
+      </div>
+    </div>
+    <div id="related-portfolio" class="owl-carousel owl-carousel-full portfolio-carousel portfolio-notitle portfolio-nomargin footer-stick carousel-widget" data-margin="1" data-pagi="false" data-nav="true" data-autoplay="5000" data-loop="true" data-items-xxs="1" data-items-xs="2" data-items-sm="3" data-items-lg="3">
+      <% projects.forEach((project) => { %>
+      <div class="oc-item">
+        <div class="iportfolio">
+          <div class="portfolio-image">
+            <a href="#">
+              <img src="<%- project.image %>" alt="<%- project.name %>">
+            </a>
+          </div>
+          <div class="portfolio-desc">
+            <h3>
+              <a href="/portfolio/<%- project.id %>"><%- project.name %></a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
