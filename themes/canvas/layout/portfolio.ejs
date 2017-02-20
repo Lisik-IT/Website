@@ -1,0 +1,22 @@
+<section id="content">
+  <div class="content-wrap">
+    <div class="container clearfix">
+      <ul id="portfolio-filter" class="portfolio-filter clearfix" data-container="#portfolio">
+        <li class="activeFilter">
+          <a href="#" data-filter="*">Show All</a>
+        </li>
+        <% site.data.categories.forEach((category) => { %>
+        <li>
+          <a href="#" data-filter=".pf-<%- category.id %>"><%- category.name %></a>
+        </li>
+        <% }) %>
+      </ul>
+			<div class="clear"></div>
+      <div id="portfolio" class="portfolio grid-container portfolio-1 clearfix">
+      <% site.data.projects.forEach((project) => { %>
+        <%- partial('partials/portfolio-item', { project }) %>
+      <% }) %>
+      </div>
+    </div>
+  </div>
+</section>
