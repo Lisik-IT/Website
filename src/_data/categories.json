@@ -1,0 +1,10 @@
+[
+  {
+    "id": "frontend",
+    "name": "Frontend"
+  },
+  {
+    "id": "backend",
+    "name": "Backend"
+  }
+]
