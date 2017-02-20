@@ -1,5 +1,6 @@
 [
   {
+    "id": "my-floor",
     "name": "MyFloor",
     "categories": [
       "frontend"
@@ -17,6 +18,7 @@
     "completed": "2017-02-12"
   },
   {
+    "id": "backend",
     "name": "backend",
     "categories": [
       "backend"
