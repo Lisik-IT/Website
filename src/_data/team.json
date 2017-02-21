@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Joe Doe",
+    "role": "Project manager",
+    "image": "http://placehold.it/700x700",
+    "description": "lorem ipsum",
+    "skills": {
+      "java": 80,
+      "html": 100,
+      "ruby": 40,
+      "node.js": 100
+    },
+    "social": {
+      "facebook": "//facebook.com",
+      "twitter": "//twitter.com"
+    }
+  },
+  {
+    "name": "Jane Doe",
+    "role": "Graphic designer",
+    "image": "http://placehold.it/700x700",
+    "description": "lorem ipsum",
+    "skills": {
+      "photoshop": 90
+    },
+    "social": {
+      "facebook": "//facebook.com",
+      "twitter": "//twitter.com"
+    }
+  }
+]
