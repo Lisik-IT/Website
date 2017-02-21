@@ -6,5 +6,9 @@
   {
     "name": "Portfolio",
     "url": "/portfolio"
+  },
+  {
+    "name": "About us",
+    "url": "/about"
   }
 ]
