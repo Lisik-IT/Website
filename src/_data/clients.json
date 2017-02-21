@@ -1,0 +1,12 @@
+[
+  {
+    "company": "Apple",
+    "image": "",
+    "website": "#",
+    "comment": {
+      "image": "",
+      "body": "lorem ipsum",
+      "author": "Steve Jobs"
+    }
+  }
+]
