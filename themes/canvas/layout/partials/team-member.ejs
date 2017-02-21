@@ -1,0 +1,47 @@
+<% const isEven = index % 2 === 0; %>
+<% const isLast = (index + 1) === site.data.team.length; %>
+
+<div class="row common-height clearfix <%- isLast ? 'bottommargin-lg' : '' %>">
+  <% if (isEven) { %>
+  <div class="col-sm-5 col-padding" style="background: url('<%- member.image %>') center center no-repeat; background-size: cover;"></div>
+  <% } %>
+  <div class="col-sm-7 col-padding" style="<%- isEven ? '' : 'background-color: #f5f5f5;'%>">
+    <div>
+      <div class="heading-block">
+        <span class="before-heading color"><%- member.role %></span>
+        <h3><%- member.name %></h3>
+      </div>
+      <div class="row clearfix">
+        <div class="col-md-6">
+          <p><%- member.description %></p>
+          <% Object.keys(member.social).forEach((s) => { %>
+          <a href="<%- member.social[s] -%>" class="social-icon inline-block si-small si-light si-rounded si-<%- s %>">
+            <i class="icon-<%- s %>"></i>
+            <i class="icon-<%- s %>"></i>
+          </a>
+          <% }) %>
+        </div>
+        <div class="col-md-6">
+          <ul class="skills">
+            <% Object.keys(member.skills).forEach((skill) => { %>
+            <li data-percent="<%- member.skills[skill] %>">
+              <span><%- skill %></span>
+              <div class="progress">
+                <div class="progress-percent">
+                  <div class="counter counter-inherit counter-instant">
+                    <span data-from="0" data-to="<%- member.skills[skill] %>" data-refresh-interval="30" data-speed="1100"></span>
+                    %
+                  </div>
+                </div>
+              </div>
+            </li>
+            <% }) %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% if (!isEven) { %>
+  <div class="col-sm-5 col-padding" style="background: url('<%- member.image %>') center center no-repeat; background-size: cover;"></div>
+  <% } %>
+</div>
