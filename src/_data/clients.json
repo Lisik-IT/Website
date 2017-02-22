@@ -1,12 +1,22 @@
 [
   {
-    "company": "Apple",
+    "company": "Realsmileapp.com",
     "image": "",
-    "website": "#",
+    "website": "//realsmileapp.com",
     "comment": {
       "image": "",
-      "body": "lorem ipsum",
-      "author": "Steve Jobs"
+      "body": "We have worked with Mateusz for 1,5 years on a chat application. He has implemented the backend from scratch. Mateusz is reliable, easy-going and a skilled developer with creativity. He always had good suggestions and he became part of the company. Among his best skills: engagement with the project, great communication (debugging with him is always easy-going and fun), clean code, good documentation and own initiative to bring up solutions. He is a great developer and I can only recommend him!",
+      "author": "Rosa Merino-Claros"
+    }
+  },
+  {
+    "company": "Neudata.net",
+    "image": "",
+    "website": "//neudata.net",
+    "comment": {
+      "image": "",
+      "body": "A+ honest complete and thorough work. I would highly advise that anyone in doubt of a solid developer to hire Mateusz in a heartbeat, very professional.",
+      "author": "Tommy Wójcik"
     }
   }
 ]
