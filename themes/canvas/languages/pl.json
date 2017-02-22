@@ -14,6 +14,10 @@
         },
         "submit": "Wyślij wiadomość"
       }
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "subtitle": "Pokaz naszych projektów"
     }
   },
   "partial": {
