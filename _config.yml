@@ -69,5 +69,10 @@ theme: canvas
 
 # Params
 gmap_api_key:
+recaptcha_key:
 email_address: contact@lisik.it
 phone_number: 123 456 789
+social:
+  facebook: //facebook.com
+  twitter: //twitter.com
+  gplus: //plus.google.com
