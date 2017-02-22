@@ -4,7 +4,10 @@
       <div class="col_two_third">
         <div class="col_one_third">
           <div class="widget clearfix">
-            <img src="/images/footer-widget-logo.png" alt="" class="footer-logo">
+            <%- partial('partials/logo', {
+              fillColor: '#fff',
+              classes: 'footer-logo'
+            }) %>
             <p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
             <%- partial('partials/contact-info') %>
           </div>
@@ -116,41 +119,20 @@
       </div>
       <div class="col_half col_last tright">
         <div class="fright clearfix">
-          <a href="#" class="social-icon si-small si-borderless si-facebook">
-            <i class="icon-facebook"></i>
-            <i class="icon-facebook"></i>
-          </a>
-          <a href="#" class="social-icon si-small si-borderless si-twitter">
-            <i class="icon-twitter"></i>
-            <i class="icon-twitter"></i>
-          </a>
-          <a href="#" class="social-icon si-small si-borderless si-gplus">
-            <i class="icon-gplus"></i>
-            <i class="icon-gplus"></i>
-          </a>
-          <a href="#" class="social-icon si-small si-borderless si-pinterest">
-            <i class="icon-pinterest"></i>
-            <i class="icon-pinterest"></i>
-          </a>
-          <a href="#" class="social-icon si-small si-borderless si-vimeo">
-            <i class="icon-vimeo"></i>
-            <i class="icon-vimeo"></i>
-          </a>
-          <a href="#" class="social-icon si-small si-borderless si-github">
-            <i class="icon-github"></i>
-            <i class="icon-github"></i>
-          </a>
-          <a href="#" class="social-icon si-small si-borderless si-yahoo">
-            <i class="icon-yahoo"></i>
-            <i class="icon-yahoo"></i>
-          </a>
-          <a href="#" class="social-icon si-small si-borderless si-linkedin">
-            <i class="icon-linkedin"></i>
-            <i class="icon-linkedin"></i>
-          </a>
+          <% Object.keys(config.social).forEach((id) => { %>
+            <%- partial('partials/social-icon', {
+              id,
+              url: config.social[id],
+              classes: 'si-small si-borderless'
+            }) %>
+          <% }) %>
         </div>
         <div class="clear"></div>
-        <i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +91-11-6541-6369 <span class="middot">&middot;</span> <i class="icon-skype2"></i> CanvasOnSkype
+        <i class="icon-envelope2"></i>
+        <%- config.email_address %>
+        <span class="middot">&middot;</span>
+        <i class="icon-phone"></i>
+        <%- config.phone_number %>
       </div>
     </div>
   </div>
