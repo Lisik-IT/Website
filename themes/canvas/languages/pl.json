@@ -1,5 +1,20 @@
 {
-  "about": {
-    "title": "O nas"
+  "layout": {
+
+  },
+  "partial": {
+    "contact-info": {
+      "address": {
+        "title": "Siedziba"
+      },
+      "phone": {
+        "title": "Numer telefonu",
+        "abbr": "Telefon"
+      },
+      "email": {
+        "title": "Adres mailowy",
+        "abbr": "Email"
+      }
+    }
   }
 }

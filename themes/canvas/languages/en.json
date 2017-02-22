@@ -1,5 +1,20 @@
 {
-  "about": {
-    "title": "About Us"
+  "layout": {
+
+  },
+  "partial": {
+    "contact-info": {
+      "address": {
+        "title": "Headquarters"
+      },
+      "phone": {
+        "title": "Phone Number",
+        "abbr": "Phone"
+      },
+      "email": {
+        "title": "Email Address",
+        "abbr": "Email"
+      }
+    }
   }
 }
