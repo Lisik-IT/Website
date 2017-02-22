@@ -1,6 +1,20 @@
 {
   "layout": {
-
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Get in Touch with Us",
+      "form": {
+        "title": "Send us an Email",
+        "input": {
+          "name": "Name",
+          "email": "Email",
+          "phone": "Phone",
+          "subject": "Subject",
+          "message": "Message"
+        },
+        "submit": "Send Message"
+      }
+    }
   },
   "partial": {
     "contact-info": {

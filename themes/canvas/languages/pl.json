@@ -1,6 +1,20 @@
 {
   "layout": {
-
+    "contact": {
+      "title": "Kontakt",
+      "subtitle": "Skontaktuj się z nami",
+      "form": {
+        "title": "Wyślij nam emaila",
+        "input": {
+          "name": "Imię",
+          "email": "Email",
+          "phone": "Telefon",
+          "subject": "Temat",
+          "message": "Wiadomość"
+        },
+        "submit": "Wyślij wiadomość"
+      }
+    }
   },
   "partial": {
     "contact-info": {
