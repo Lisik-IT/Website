@@ -34,5 +34,15 @@
         "abbr": "Email"
       }
     }
+  },
+  "data": {
+    "clients": {
+      "rsa": {
+        "comment": "eng comment"
+      },
+      "neudata": {
+        "comment": "eng comment #2"
+      }
+    }
   }
 }
