@@ -43,6 +43,16 @@
       "neudata": {
         "comment": "pl comment #2"
       }
+    },
+    "team": {
+      "joe-doe": {
+        "role": "Menadźer projektu",
+        "description": "pm"
+      },
+      "jane-doe": {
+        "role": "Designer",
+        "description": "gd"
+      }
     }
   }
 }
