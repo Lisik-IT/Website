@@ -1,9 +1,5 @@
 [
   {
-    "id": "home",
-    "url": "/"
-  },
-  {
     "id": "portfolio",
     "url": "/portfolio"
   },
