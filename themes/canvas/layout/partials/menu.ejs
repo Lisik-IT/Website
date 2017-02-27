@@ -1,7 +1,7 @@
 <ul>
   <% routes.forEach((route) => { %>
   <li>
-    <a href="<%- `${prefix}${route.url}` %>"><%- route.name %></a>
+    <a href="<%- `${prefix}${route.url}` %>"><%- __(`data.menu.${route.id}`) %></a>
     <% if ( route.children) { %>
     <%- partial('menu', { routes: route.children, prefix }) %>
     <% } %>
