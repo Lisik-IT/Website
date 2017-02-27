@@ -8,12 +8,12 @@
   <div class="col-sm-7 col-padding" style="<%- isEven ? '' : 'background-color: #f5f5f5;'%>">
     <div>
       <div class="heading-block">
-        <span class="before-heading color"><%- member.role %></span>
+        <span class="before-heading color"><%- __(`data.team.${member.id}.role`) %></span>
         <h3><%- member.name %></h3>
       </div>
       <div class="row clearfix">
         <div class="col-md-6">
-          <p><%- member.description %></p>
+          <p><%- __(`data.team.${member.id}.description`) %></p>
           <% Object.keys(member.social).forEach((s) => { %>
           <a href="<%- member.social[s] -%>" class="social-icon inline-block si-small si-light si-rounded si-<%- s %>">
             <i class="icon-<%- s %>"></i>
