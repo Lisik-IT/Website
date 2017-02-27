@@ -18,6 +18,20 @@
     "portfolio": {
       "title": "Portfolio",
       "subtitle": "Showcase of Our Awesome Works"
+    },
+    "about": {
+      "title": "About us",
+      "subtitle": "Everything you need to know",
+      "description": {
+        "title": "Why choose <span>Us</span>",
+        "body": "We are software house based in Katowice, Poland. Our mutual experience in various fields enables us to create various projects, from data scraping solutions, via backends for mobile applications to huge enterprise grade solutions and social media applications. Our software consists of high quality code, deep understanding of client needs and automated testing."
+      },
+      "clients": {
+        "title": "Our clients"
+      },
+      "references": {
+        "title": "What <span>clients</span> say?"
+      }
     }
   },
   "partial": {
