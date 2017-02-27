@@ -47,6 +47,10 @@
         "title": "Email Address",
         "abbr": "Email"
       }
+    },
+    "top-bar": {
+      "phone": "Call",
+      "email": "Email"
     }
   },
   "data": {

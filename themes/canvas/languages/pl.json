@@ -47,6 +47,10 @@
         "title": "Adres mailowy",
         "abbr": "Email"
       }
+    },
+    "top-bar": {
+      "phone": "Telefon",
+      "email": "Email"
     }
   },
   "data": {

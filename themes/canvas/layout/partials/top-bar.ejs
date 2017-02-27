@@ -1,0 +1,31 @@
+<div id="top-bar" class="hidden-xs">
+  <div class="container clearfix">
+    <div class="col_half nobottommargin">
+      <p class="nobottommargin">
+        <strong><%- __('partial.top-bar.phone') %>: </strong>
+        <span><%- config.phone_number %> | </span>
+        <strong><%- __('partial.top-bar.email') %>: </strong>
+        <span><%- config.email_address %></span>
+      </p>
+    </div>
+    <div class="col_half col_last fright nobottommargin">
+      <div class="top-links">
+        <ul>
+          <li>
+            <a href="#"><%- page.lang %></a>
+            <ul>
+              <% site.data.languages.forEach((language) => { %>
+              <li>
+                <a href="/<%- language.id === config.language ? '' : language.id %>">
+                  <img src="/images/icons/flags/<%- language.id %>.png" alt="<%- language.name %>">
+                  <%- language.name %>
+                </a>
+              </li>
+              <% }) %>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
