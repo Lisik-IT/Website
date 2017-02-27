@@ -1,9 +1,9 @@
 <ul>
   <% routes.forEach((route) => { %>
   <li>
-    <a href="<%- route.url %>"><%- route.name %></a>
+    <a href="<%- `${prefix}${route.url}` %>"><%- route.name %></a>
     <% if ( route.children) { %>
-    <%- partial('menu', { routes: route.children }) %>
+    <%- partial('menu', { routes: route.children, prefix }) %>
     <% } %>
   </li>
   <% }) %>
