@@ -1,3 +1,3 @@
 layout: about
-title: About us
+title: O Nas
 ---

@@ -16,7 +16,7 @@
             <ul>
               <% site.data.languages.forEach((language) => { %>
               <li>
-                <a href="/<%- language.id === config.language ? '' : language.id %>">
+                <a href="<%- switch_lang(language.id) %>">
                   <img src="/images/icons/flags/<%- language.id %>.png" alt="<%- language.name %>">
                   <%- language.name %>
                 </a>

@@ -1,7 +1,7 @@
 <ul>
   <% routes.forEach((route) => { %>
   <li class="<%- page.path.includes(route.url.slice(1)) ? 'current' : '' %>">
-    <a href="<%- `${prefix}${route.url}` %>"><%- __(`data.menu.${route.id}`) %></a>
+    <a href="<%- url_for_lang(route.url) %>"><%- __(`data.menu.${route.id}`) %></a>
     <% if ( route.children) { %>
     <%- partial('menu', { routes: route.children, prefix }) %>
     <% } %>
